@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    'use strict';
+    
+    const array = ["掃除","買い物","散歩"]
+
+    console.log("========================");
+    console.log("現在持っているのタスク一覧");
+    console.log("========================");
+
+
+  const loop = function(){
+    for(let i = 0; i < array.length; i++){
+    console.log(array[i]);
+   }
+  }
+
+   loop();
+
+   let add = prompt("タスクを追加して下さい");
+
+   alert("新しいタスクを追加しました");
+   
+   array.push(add);
+
+    console.log("========================");
+    console.log("現在持っているのタスク一覧");
+    console.log("========================");
+
+   loop();
+
+   prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください");
+  
+
+    
+  </script>
+  
+</body>
+</html>
